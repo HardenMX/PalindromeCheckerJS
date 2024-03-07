@@ -3,23 +3,19 @@ const textInput = document.getElementById('text-input');
 
 checkBtn.addEventListener('click', alert4);
 
-function alert4 () {
+function alert4 () 
+{
     if (textInput.value === null || textInput.value === "" )
-    {
         alert('Please input a value');
-    }
-    else 
-    {
+    else
         palindromer(textInput.value);
-    }
 }   
 
 function palindromer (palindrome) {
     let newWord = "";
+    
     for (let i = 0; i < palindrome.length; i++)
-    {
         newWord += palindrome[palindrome.length-i-1];
-    }
        
     if (newWord === palindrome) 
         alert(`${newWord} is a palindrome`); 
