@@ -16,14 +16,12 @@ function alert4 () {
 
 function palindromer (palindrome) {
     let newWord = "";
-    for (let i = 0; i < palindrome.length; i++)
-    {
+
+     for (let i = 0; i < palindrome.length; i++)
         newWord += palindrome[palindrome.length-i-1];
-    }
        
     if (newWord === palindrome) 
-        alert(`${newWord} is a palindrome`); 
+        result.textContent = `${palindrome} is a palindrome`;
     else 
-        alert(`${newWord} is not a palindrome`);
-   
+        result.textContent = `${palindrome} is not a palindrome`;
 }
